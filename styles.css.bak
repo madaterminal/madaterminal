@@ -1,0 +1,162 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Video background styles */
+.video-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.7); /* Adjust the brightness as needed */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Services and modal styles */
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+.services {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 100%;
+}
+
+.service {
+    max-width: 400px;
+    margin: 0 1rem; /* Adjust the margin as needed */
+}
+
+.banner {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Add this line */
+}
+
+.service1 .banner {
+    background-image: url('service1-image.jpg'); /* Replace with your image path */
+}
+
+.service2 .banner {
+    background-image: url('service2-image.jpg'); /* Replace with your image path */
+}
+
+.banner:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Custom styles for Service 1 modal */
+.service1-modal {
+    background-image: url('service1-modal-background.jpg'); /* Replace with your image path */
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+/* Custom styles for Service 2 modal */
+.service2-modal {
+    background-image: url('service2-modal-background.jpg'); /* Replace with your image path */
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+/* Header styles */
+/* Header styles */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.logo {
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    margin-bottom: 10px; /* Add margin to separate from company name */
+}
+
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%; /* Add this line */
+}
+
+.rights-reserved {
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    background-color: #35495e;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #293846;
+}
+
+/* Rest of your styles */
+
+/* Modal styles */
+.modal-content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 2;
+}
+
+.overlay.active .modal-content {
+    display: block;
+}
