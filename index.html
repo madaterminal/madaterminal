@@ -1,7 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mada Terminal - Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div class="header">
+        <img src="company-logo.png" alt="Company Logo" class="logo">
+        <h1 class="company-name">Mada Terminal</h1>
+    </div>
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="background-video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="overlay"></div>
+    <div class="services-container">
+        <div class="services">
+            <div class="service service1">
+                <div class="banner" data-modal="modal1">
+                    <h2>Service 1</h2>
+                    <p>Discover the amazing features of Service 1.</p>
+                </div>
+            </div>
+            <div class="service service2">
+                <div class="banner" data-modal="modal2">
+                    <h2>Service 2</h2>
+                    <p>Experience the benefits of Service 2.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay" id="modal1">
+        <div class="modal-content service1-modal">
+            <h2>Service 1 Details</h2>
+            <p>More detailed information about Service 1.</p>
+            <a class="btn" href="service1-details.html">Learn More</a>
+            <button class="btn close-modal">Close</button>
+        </div>
+    </div>
+    <div class="overlay" id="modal2">
+        <div class="modal-content service2-modal">
+            <h2>Service 2 Details</h2>
+            <p>More detailed information about Service 2.</p>
+            <a class="btn" href="service2-details.html">Learn More</a>
+            <button class="btn close-modal">Close</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2023 Mada Terminal. All rights reserved.</p>
+        <p class="rights-reserved">The right is received for Mada Terminal 2023.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
